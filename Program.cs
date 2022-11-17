@@ -1,6 +1,6 @@
 ﻿//В десятичой системе нахождения цифр
 // 456 / 100 => 4
-// 456 % => 56 + _______
+// 456 % 100 => 56 + _______
 // 456 / 10 => 45 + __ !
 // 456 % 10 => 6     ! !
 // 56 / 10 => 5 <----! !  
@@ -16,6 +16,23 @@
 //456 -> 5
 //782 -> 8
 //918 -> 1
+
+int SecondNum2Digits (int number)
+{
+    int current = (number % 100) / 10;
+    return current;
+}
+
+Console.WriteLine ($"Enter a three-digit number: ");
+int userNum = Convert.ToInt32(Console.ReadLine());
+
+if ( userNum > 99 && userNum < 1000)
+{
+    int result = SecondNum2Digits (userNum);
+    Console.WriteLine ($"Second digit of the number {userNum} is {result} ");
+}
+else Console.WriteLine ($"Number {userNum} is not three digits! Enter a THREE-DIGIT number!");
+
 
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
