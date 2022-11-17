@@ -69,4 +69,50 @@ else Console.WriteLine($"The entered number {userNum} does not contain the third
 //7 -> да
 //1 -> нет
 
+//Вариант 1
 
+/*
+void Weekend (int number)
+{
+    if (number < 0 || number > 7)
+    {
+        Console.WriteLine($"Day {number} is not a day of the week (there are 7 days in a week(enter a number from 1 to 7))");
+    }
+    else 
+    {
+        if (number > 0 && number < 6)
+        {
+            Console.WriteLine($"No, day {number} is not Weekend");
+        }
+        else Console.WriteLine($"Yes, day {number} is Weekend");
+    }
+}
+
+Console.WriteLine("Enter any number: ");
+int userNum = Convert.ToInt32(Console.ReadLine());
+Weekend(userNum); 
+*/
+
+//Вариант 2
+
+/*
+void Weekend (int number)
+{
+    if (number < 5 && number > 8)
+    {
+        Console.WriteLine($"Yes, day {number} is Weekend");
+    }
+    else 
+    {
+        if (number > 0 && number < 6)
+        {
+            Console.WriteLine($"No, day {number} is not Weekend");
+        }
+        else Console.WriteLine($"Day {number} is not a day of the week (there are 7 days in a week(enter a number from 1 to 7))");
+    }
+}
+
+Console.WriteLine("Enter any number: ");
+int userNum = Convert.ToInt32(Console.ReadLine());
+Weekend(userNum); 
+*/
