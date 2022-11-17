@@ -38,6 +38,7 @@ else Console.WriteLine ($"Number {userNum} is not three digits! Enter a THREE-DI
 */
 
 //Вариант 2 (не работает с отрицательными числами)
+
 /*
 void SecondNum2Digits (int number)
 {
@@ -119,6 +120,7 @@ SecondNum2Digits (userNum);
 //32679 -> 6
 
 //Вариант 1 (не работает с отрицательными числами)
+
 /*
 int ThreeNumDigits (int number)
 {
